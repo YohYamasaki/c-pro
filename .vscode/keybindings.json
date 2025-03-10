@@ -1,0 +1,12 @@
+[
+  {
+    "key": "ctrl+f5",
+    "command": "-workbench.action.debug.runWithoutDebugging"
+  },
+  {
+    "key": "ctrl+f5",
+    "command": "workbench.action.tasks.runTask",
+    "args": "AtCoder Test",
+    "when": "editorTextFocus && !inDebugMode"
+  }
+]
