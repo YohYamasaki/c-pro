@@ -15,13 +15,6 @@ fi
 cargo new "$DIR"
 cd "$DIR" || exit
 
-mkdir .vscode -p
-cat <<EOF >.vscode/settings.json
-{
-    "rust-analyzer.check.command": "check"
-}
-EOF
-
 mkdir .cargo -p
 cat <<EOF >.cargo/config.toml
 [build]
@@ -51,5 +44,3 @@ done
 
 cargo build
 cargo build --release
-
-code .

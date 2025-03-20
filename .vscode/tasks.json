@@ -7,7 +7,7 @@
       "command": "bash",
       "args": [
         "-c",
-        "contest=$(basename $(dirname $(dirname $(dirname \"${file}\")))); problem=$(basename \"${file}\" .rs); tmp=$(mktemp -d) && oj d -d \"$tmp\" -s https://atcoder.jp/contests/${contest}/tasks/${contest}_${problem} && cd ${contest} && oj t -d \"$tmp\" -c \"cargo run --bin ${problem}\" && rm -r \"$tmp\""
+        "contest=$(basename $(dirname $(dirname $(dirname \"${file}\")))); problem=$(basename \"${file}\" .rs); tmp=$(mktemp -d) && oj d -d \"$tmp\" -s https://atcoder.jp/contests/${contest}/tasks/${contest}_${problem} && cd ${contest} && oj t -N -d \"$tmp\" -c \"cargo run --bin ${problem}\" && rm -r \"$tmp\""
       ],
       "problemMatcher": []
     }
